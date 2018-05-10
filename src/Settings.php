@@ -77,37 +77,36 @@ class Settings extends App {
 
 						<aside class="SK_SidebarBlock">
 
-	            <h2>Support Complete Open Graph!</h2>
+							<h2>Support Complete Open Graph!</h2>
 
-	            <ul class="SK_FeedbackList">
-	              <li class="SK_FeedbackList-item SK_FeedbackItem">
-	                <a class="SK_FeedbackItem-link" title="Review on WordPress" href="<?php echo $this->wordpress_url; ?>" target="_blank">
-	                  <?php echo file_get_contents(plugin_dir_path( __FILE__ ) . 'assets/img/wordpress.svg.php'); ?>
-	                </a>
-	                <span class="SK_FeedbackItem-text"><p><a href="<?php echo $this->wordpress_url; ?>">Leave a 5 Star Review</a></p></span>
-	              </li>
-	              <li class="SK_FeedbackList-item SK_FeedbackItem">
-	                <a class="SK_FeedbackItem-link SK_FeedbackItem-link--github" title="Star on Github" href="<?php echo $this->github_url; ?>" target="_blank">
-	                  <?php echo file_get_contents(plugin_dir_path( __FILE__ ) . 'assets/img/github.svg.php'); ?>
-	                </a>
-	                <span class="SK_FeedbackItem-text"><p><a href="<?php echo $this->github_url; ?>">Star on GitHub</a></p></span>
-	              </li>
-	              <li class="SK_FeedbackList-item SK_FeedbackItem">
-	                <a class="SK_FeedbackItem-link" title="Tweet About It" href="<?php echo $this->twitter_url; ?>" target="_blank">
-	                  <?php echo file_get_contents(plugin_dir_path( __FILE__ ) . 'assets/img/twitter.svg.php'); ?>
-	                </a>
-	                <span class="SK_FeedbackItem-text"><p><a href="<?php echo $this->twitter_url; ?>">Tweet About It</a></p></span>
-	              </li>
-	            </ul>
-	          </aside>
+							<ul class="SK_FeedbackList">
+								<li class="SK_FeedbackList-item SK_FeedbackItem">
+									<a class="SK_FeedbackItem-link" title="Review on WordPress" href="<?php echo $this->wordpress_url; ?>" target="_blank">
+									<?php echo file_get_contents(plugin_dir_path( __FILE__ ) . 'assets/img/wordpress.svg.php'); ?>
+									</a>
+									<span class="SK_FeedbackItem-text"><p><a href="<?php echo $this->wordpress_url; ?>">Leave a 5 Star Review</a></p></span>
+								</li>
+								<li class="SK_FeedbackList-item SK_FeedbackItem">
+									<a class="SK_FeedbackItem-link SK_FeedbackItem-link--github" title="Star on Github" href="<?php echo $this->github_url; ?>" target="_blank">
+									<?php echo file_get_contents(plugin_dir_path( __FILE__ ) . 'assets/img/github.svg.php'); ?>
+									</a>
+									<span class="SK_FeedbackItem-text"><p><a href="<?php echo $this->github_url; ?>">Star on GitHub</a></p></span>
+								</li>
+								<li class="SK_FeedbackList-item SK_FeedbackItem">
+									<a class="SK_FeedbackItem-link" title="Tweet About It" href="<?php echo $this->twitter_url; ?>" target="_blank">
+									<?php echo file_get_contents(plugin_dir_path( __FILE__ ) . 'assets/img/twitter.svg.php'); ?>
+									</a>
+									<span class="SK_FeedbackItem-text"><p><a href="<?php echo $this->twitter_url; ?>">Tweet About It</a></p></span>
+								</li>
+							</ul>
+						</aside>
 
-	          <aside class="SK_SidebarBlock">
-
-	          	<h2>Have you properly secured your WordPress site yet?</h2>
-
-	            <a class="block" href="https://sucuri.7eer.net/c/1137544/392281/3713" title="Properly Secure Your WordPress Site"><img src="//a.impactradius-go.com/display-ad/3713-392281" border="0" alt="" width="300" height="250"/></a><img height="0" width="0" src="//sucuri.7eer.net/i/1137544/392281/3713" style="position:absolute;visibility:hidden;" border="0" />
-
-	          </aside>
+						<?php if(apply_filters('complete_open_graph_show_ads', true)): ?>
+							<aside class="SK_SidebarBlock">
+								<h2>Have you properly secured your WordPress site yet?</h2>
+								<a class="block" href="https://sucuri.7eer.net/c/1137544/392281/3713" title="Properly Secure Your WordPress Site"><img src="//a.impactradius-go.com/display-ad/3713-392281" border="0" alt="" width="300" height="250"/></a><img height="0" width="0" src="//sucuri.7eer.net/i/1137544/392281/3713" style="position:absolute;visibility:hidden;" border="0" />
+							</aside>
+						<?php endif; ?>
 
 					</div>
 				</div>
